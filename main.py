@@ -70,7 +70,7 @@ async def process_offer(user_id, messages):
         # Notify owner
         await app.send_message(
             config.OWNER_ID, 
-            f"📩 New suggestion #`{offer_id}` from user `{user_id}`. Approve?", 
+            f"📩 New suggestion #`{offer_id}`. Approve?", 
             reply_markup=keyboard
         )
         # Send the album to the owner
